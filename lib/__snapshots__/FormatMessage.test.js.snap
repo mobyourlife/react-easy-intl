@@ -1,6 +1,1 @@
-exports[`test renders expected text 1`] = `
-<span>
-  Hi 
-  !
-</span>
-`;
+exports[`test renders expected text 1`] = `null`;
