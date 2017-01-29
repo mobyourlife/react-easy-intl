@@ -5,5 +5,19 @@
   "main": "index.js",
   "repository": "git@github.com:mobyourlife/react-easy-intl",
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-easy-intl": "file:./lib/"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
