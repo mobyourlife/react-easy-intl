@@ -7,12 +7,14 @@
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
   "license": "MIT",
   "devDependencies": {
-    "react-scripts": "0.8.5"
+    "enzyme": "^2.7.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-scripts": "0.8.5",
+    "react-test-renderer": "^15.4.2"
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-easy-intl": "file:./lib/"
+    "react-dom": "^15.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
