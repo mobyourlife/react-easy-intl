@@ -2,7 +2,7 @@
   "name": "react-easy-intl",
   "version": "1.0.0",
   "description": "React Intl made easy.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:mobyourlife/react-easy-intl",
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
   "license": "MIT",
