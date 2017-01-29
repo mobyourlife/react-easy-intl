@@ -1,1 +1,1 @@
-exports[`test renders expected text 1`] = `null`;
+exports[`basic tests renders component with text 1`] = `null`;
