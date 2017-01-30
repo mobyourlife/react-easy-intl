@@ -1,6 +1,6 @@
 {
   "name": "react-easy-intl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Intl made easy.",
   "keywords": [
     "react",
@@ -12,16 +12,19 @@
     "locales",
     "icu"
   ],
-  "main": "index.js",
+  "main": "dist/main.js",
   "repository": "git@github.com:mobyourlife/react-easy-intl",
   "author": "Filipe Oliveira <contato@fmoliveira.com.br>",
   "license": "MIT",
   "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
     "enzyme": "^2.7.1",
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "0.8.5",
     "react-test-renderer": "^15.4.2",
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "webpack": "^1.14.0"
   },
   "dependencies": {
     "messageformat": "^1.0.2",
@@ -29,8 +32,7 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack -p",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

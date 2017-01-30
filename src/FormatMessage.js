@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import MessageFormat from 'messageformat'
 import Globalize from './Globalize'
 
-class FormatMessage extends Component {
+export class FormatMessage extends Component {
   constructor (props) {
     super(props)
     this.mf = new MessageFormat(Globalize.getLocale())

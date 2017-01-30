@@ -1,18 +1,18 @@
 export class Globalize {
   static getLocale () {
-    return global.EasyIntlLocale || 'en'
+    return window.EasyIntlLocale || 'en'
   }
 
   static setLocale (locale) {
-    global.EasyIntlLocale = locale
+    window.EasyIntlLocale = locale
   }
 
   static getMessages () {
-    if (!global.EasyIntlMessages) {
+    if (!window.EasyIntlMessages) {
       return []
     }
 
-    return global.EasyIntlMessages[this.getLocale()]
+    return window.EasyIntlMessages[this.getLocale()]
   }
 
   static getMessage (str) {
@@ -21,7 +21,7 @@ export class Globalize {
   }
 
   static setMessages (messages) {
-    global.EasyIntlMessages = messages
+    window.EasyIntlMessages = messages
   }
 }
 

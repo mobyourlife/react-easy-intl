@@ -18,7 +18,7 @@ I haven't run any benchmark against this. Improvements and features will be miss
 
 Start installing the lib with `yarn add react-easy-intl` or `npm install --save react-easy-intl`.
 
-Import the Globalize static class in your main app file to initialise the messages dictionary and set your current locale:
+Import the `Globalize` static class in your main app file to initialise the messages dictionary and set your current locale:
 
 ```js
 import Globalize from 'react-easy-intl/Globalize'
