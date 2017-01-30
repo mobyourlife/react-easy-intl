@@ -21,7 +21,7 @@ Start installing the lib with `yarn add react-easy-intl` or `npm install --save 
 Import the `Globalize` static class in your main app file to initialise the messages dictionary and set your current locale:
 
 ```js
-import Globalize from 'react-easy-intl/Globalize'
+import { Globalize } from 'react-easy-intl'
 
 const messages = {
   en: {
@@ -41,7 +41,7 @@ Globalize.setLocale('en')
 Import the `FormatMessage` component to start rendering your translated strings:
 
 ```js
-import FormatMessage from 'react-easy-intl/FormatMessage'
+import { FormatMessage } from 'react-easy-intl'
 
 render () {
   return <FormatMessage name='John Doe'>Hi #name!</FormatMessage>
