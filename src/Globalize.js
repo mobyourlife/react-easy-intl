@@ -16,8 +16,8 @@ export class Globalize {
     const attempts = [ff, first, ...list]
       .filter(i => !!i)
 
-    const compatible = Object.keys(window.EasyIntlMessages)
-      .find(i => attempts.indexOf(i) !== -1)
+    const compatible = attempts
+      .find(i => Object.keys(window.EasyIntlMessages).indexOf(i) !== -1)
 
     window.EasyIntlLocale = compatible
   }
