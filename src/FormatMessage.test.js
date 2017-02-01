@@ -91,3 +91,9 @@ describe('#pt locale tests', () => {
     expect(wrapper.text()).toEqual('Eu tenho 100 livros.')
   })
 })
+
+describe('auto language detection', () => {
+  it('detects without crashing', () => {
+    Globalize.detectLocale()
+  })
+})

@@ -1,10 +1,25 @@
 export class Globalize {
   static getLocale () {
-    return window.EasyIntlLocale || 'en'
+    const def = window.EasyIntlMessages && Object.keys(window.EasyIntlMessages)[0]
+    return window.EasyIntlLocale || def || 'en'
   }
 
   static setLocale (locale) {
     window.EasyIntlLocale = locale
+  }
+
+  static detectLocale () {
+    const ff = window.navigator.userLanguage
+    const first = window.navigator.language
+    const list = window.navigator.languages
+
+    const attempts = [ff, first, ...list]
+      .filter(i => !!i)
+
+    const compatible = Object.keys(window.EasyIntlMessages)
+      .find(i => attempts.indexOf(i) !== -1)
+
+    window.EasyIntlLocale = compatible
   }
 
   static getMessages () {
